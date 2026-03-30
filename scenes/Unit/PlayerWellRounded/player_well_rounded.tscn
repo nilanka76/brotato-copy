@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://duw5fukmlc33t" path="res://scenes/Unit/unit.tscn" id="1_f2mkn"]
 [ext_resource type="Script" uid="uid://bjfsg0vwk8j0f" path="res://scenes/Unit/PlayerWellRounded/player.gd" id="2_hl6f3"]
 [ext_resource type="Texture2D" uid="uid://cproxhccob85g" path="res://assets/sprites/Players/Player_1.png" id="2_uk5ik"]
+[ext_resource type="Resource" uid="uid://c4fgvcr1x41nb" path="res://resources/units/player/stats_player_well_rounded.tres" id="3_qh524"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hl6f3"]
 radius = 29.0
@@ -12,6 +13,7 @@ script = ExtResource("2_hl6f3")
 dash_duration = 0.1
 dash_cooldown = 1.0
 dash_speed_multiplier = 4.0
+stats = ExtResource("3_qh524")
 
 [node name="Sprite" parent="Visuals" parent_id_path=PackedInt32Array(1250620054) index="1" unique_id=1021174710]
 texture = ExtResource("2_uk5ik")

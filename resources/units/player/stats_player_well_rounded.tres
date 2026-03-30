@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="UnitStats" format=3 uid="uid://c4fgvcr1x41nb"]
+
+[ext_resource type="Script" uid="uid://e0rv1kcnrhm4" path="res://resources/units/unit_stats.gd" id="1_no1qp"]
+[ext_resource type="Texture2D" uid="uid://cproxhccob85g" path="res://assets/sprites/Players/Player_1.png" id="1_ya5kn"]
+
+[resource]
+script = ExtResource("1_no1qp")
+Icon = ExtResource("1_ya5kn")
+speed = 500
+metadata/_custom_type_script = "uid://e0rv1kcnrhm4"
