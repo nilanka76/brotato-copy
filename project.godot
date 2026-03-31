@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="test game"
-run/main_scene="uid://duw5fukmlc33t"
+run/main_scene="uid://c3m5a3lv8u8so"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*uid://c4ix2l3gnhobj"
 
 [display]
 

@@ -23,7 +23,6 @@ stats = ExtResource("3_qh524")
 [node name="Trail" type="Line2D" parent="Visuals" parent_id_path=PackedInt32Array(1250620054) index="0" unique_id=530750336 node_paths=PackedStringArray("player")]
 unique_name_in_owner = true
 top_level = true
-points = PackedVector2Array(-200, -6, 0, 0)
 width = 50.0
 width_curve = SubResource("Curve_kvmg8")
 script = ExtResource("4_uguma")
