@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UnitStats" format=3 uid="uid://bht37re27exfc"]
+
+[ext_resource type="Texture2D" uid="uid://dq63ocnu3lset" path="res://assets/sprites/Players/Player_3}.png" id="1_31qpa"]
+[ext_resource type="Script" uid="uid://e0rv1kcnrhm4" path="res://resources/units/unit_stats.gd" id="2_hm2hy"]
+
+[resource]
+script = ExtResource("2_hm2hy")
+Icon = ExtResource("1_31qpa")
+health = 20
+health_incr_per_wave = 0.0
+damage = 2
+speed = 350
+luck = 3.0
+block_chance = 1.0
+gold_drop = 0
+metadata/_custom_type_script = "uid://e0rv1kcnrhm4"

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bwh7usun67e7k"]
+
+[ext_resource type="PackedScene" uid="uid://d4c6gk5epurl2" path="res://scenes/Unit/PlayerWellRounded/player_well_rounded.tscn" id="1_6o41d"]
+[ext_resource type="Resource" uid="uid://bht37re27exfc" path="res://resources/units/player/stats_player_crazy.tres" id="2_sok6b"]
+
+[node name="PlayerCrazy" unique_id=2051371261 instance=ExtResource("1_6o41d")]
+stats = ExtResource("2_sok6b")

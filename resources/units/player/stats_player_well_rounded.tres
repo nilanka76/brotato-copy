@@ -6,5 +6,9 @@
 [resource]
 script = ExtResource("1_no1qp")
 Icon = ExtResource("1_ya5kn")
-speed = 500
+health = 30
+damage = 2
+luck = 2.0
+block_chance = 1.0
+gold_drop = 0
 metadata/_custom_type_script = "uid://e0rv1kcnrhm4"

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://j4j51pnqaop8"]
+
+[ext_resource type="PackedScene" uid="uid://d4c6gk5epurl2" path="res://scenes/Unit/PlayerWellRounded/player_well_rounded.tscn" id="1_oh3vb"]
+[ext_resource type="Resource" uid="uid://ckcyxn6s31b5l" path="res://resources/units/player/stats_player_brawler.tres" id="2_6mqui"]
+
+[node name="PlayerBrawler" unique_id=2051371261 instance=ExtResource("1_oh3vb")]
+stats = ExtResource("2_6mqui")

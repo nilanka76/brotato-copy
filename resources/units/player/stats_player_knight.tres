@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UnitStats" format=3 uid="uid://4m0jy7eseq64"]
+
+[ext_resource type="Texture2D" uid="uid://bt0lww88864ws" path="res://assets/sprites/Players/Player_5.png" id="1_eagbc"]
+[ext_resource type="Script" uid="uid://e0rv1kcnrhm4" path="res://resources/units/unit_stats.gd" id="2_i8glj"]
+
+[resource]
+script = ExtResource("2_i8glj")
+Icon = ExtResource("1_eagbc")
+health = 30
+health_incr_per_wave = 0.0
+damage = 4
+damage_incr_per_wave = 0.0
+luck = 4.0
+block_chance = 4.0
+metadata/_custom_type_script = "uid://e0rv1kcnrhm4"
