@@ -248,7 +248,7 @@ _data = {
 &"move": SubResource("Animation_v5ugi")
 }
 
-[node name="Unit" type="Node2D" unique_id=2051371261]
+[node name="Unit" type="Area2D" unique_id=1385448741]
 script = ExtResource("1_ibc5n")
 
 [node name="Visuals" type="Node2D" parent="." unique_id=1250620054]
