@@ -4,12 +4,16 @@
 [ext_resource type="Script" uid="uid://bq12jnxa37apk" path="res://scenes/Unit/Enemy/enemy_chaser_slow.gd" id="2_7enim"]
 [ext_resource type="Resource" uid="uid://bu6bvn5ha8cmk" path="res://resources/units/enemy/enemy_chaser_slow.tres" id="3_0no1w"]
 [ext_resource type="Texture2D" uid="uid://d1ou504pylric" path="res://assets/sprites/Enemies/Enemy_1.png" id="3_81i3t"]
+[ext_resource type="PackedScene" uid="uid://brvjkqtexkw34" path="res://scenes/Components/hitbox_component.tscn" id="5_0no1w"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_81i3t"]
-radius = 30.0
+radius = 1.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7enim"]
 radius = 150.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0no1w"]
+radius = 40.0
 
 [node name="EnemyChaserSlow" unique_id=1385448741 instance=ExtResource("1_tveg6")]
 collision_layer = 2
@@ -22,7 +26,7 @@ texture = ExtResource("3_81i3t")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1876567214]
 shape = SubResource("CircleShape2D_81i3t")
-debug_color = Color(0.9999997, 0.008957181, 0.06736565, 0.41960785)
+debug_color = Color(0.12542805, 0.6465212, 0.0678686, 0.41960785)
 
 [node name="VisionArea" type="Area2D" parent="." index="3" unique_id=311886576]
 unique_name_in_owner = true
@@ -32,3 +36,11 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="VisionArea" index="0" unique_id=1184919994]
 unique_name_in_owner = true
 shape = SubResource("CircleShape2D_7enim")
+
+[node name="HitboxComponent" parent="." index="5" unique_id=1079937625 instance=ExtResource("5_0no1w")]
+collision_layer = 8
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent" index="0" unique_id=1221922696]
+shape = SubResource("CircleShape2D_0no1w")
+debug_color = Color(0.99791247, 0, 0.16562915, 0.41960785)

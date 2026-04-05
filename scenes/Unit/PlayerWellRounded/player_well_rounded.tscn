@@ -11,7 +11,10 @@ _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hl6f3"]
-radius = 29.0
+radius = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uguma"]
+radius = 30.265491
 
 [node name="PlayerWellRounded" unique_id=2051371261 instance=ExtResource("1_f2mkn")]
 collision_mask = 2
@@ -38,8 +41,10 @@ z_index = 1
 texture = ExtResource("2_uk5ik")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1876567214]
+z_index = 1
 position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_hl6f3")
+debug_color = Color(0.22612756, 0.63862985, 5.7756904e-07, 0.41960785)
 
 [node name="DashTimer" type="Timer" parent="." index="3" unique_id=2127876341]
 one_shot = true
@@ -50,6 +55,14 @@ one_shot = true
 [node name="TrailTimer" type="Timer" parent="." index="5" unique_id=1418887036]
 unique_name_in_owner = true
 one_shot = true
+
+[node name="HurtboxComponent" parent="." index="6" unique_id=664443890]
+z_index = 1
+collision_layer = 16
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent" index="0" unique_id=2011545919]
+shape = SubResource("CircleShape2D_uguma")
 
 [connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
 [connection signal="timeout" from="DashTimer" to="Visuals/Trail" method="_on_dash_timer_timeout"]
