@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UnitStats" format=3 uid="uid://xf6ig4csxkr4"]
+
+[ext_resource type="Texture2D" uid="uid://bf4ls8ho3cuqa" path="res://assets/sprites/Enemies/Enemy_2.png" id="1_csetw"]
+[ext_resource type="Script" uid="uid://e0rv1kcnrhm4" path="res://resources/units/unit_stats.gd" id="1_lqx5m"]
+
+[resource]
+script = ExtResource("1_lqx5m")
+name = "ChaserMid"
+type = 1
+Icon = ExtResource("1_csetw")
+health = 8.0
+damage = 3.0
+block_chance = 3.0
+gold_drop = 2
+metadata/_custom_type_script = "uid://e0rv1kcnrhm4"

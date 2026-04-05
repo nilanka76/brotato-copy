@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dyuc3poud0hou"]
+
+[ext_resource type="PackedScene" uid="uid://bamuelkfpejov" path="res://scenes/Unit/Enemy/enemy_chaser_slow.tscn" id="1_203s2"]
+[ext_resource type="Resource" uid="uid://dyl4bu2utpjok" path="res://resources/units/enemy/enemy_charger.tres" id="2_kuqsx"]
+[ext_resource type="Texture2D" uid="uid://emsi6ifyt0vf" path="res://assets/sprites/Enemies/Enemy_5.png" id="3_isq2c"]
+
+[node name="EnemyCharger" unique_id=1385448741 instance=ExtResource("1_203s2")]
+stats = ExtResource("2_kuqsx")
+
+[node name="Sprite" parent="Visuals" parent_id_path=PackedInt32Array(1250620054) index="1" unique_id=1021174710]
+texture = ExtResource("3_isq2c")
