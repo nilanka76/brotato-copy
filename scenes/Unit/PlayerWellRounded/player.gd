@@ -17,6 +17,7 @@ var is_dashing: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	super._ready()
 	dash_timer.wait_time = dash_duration
 	dash_cooldown_timer.wait_time = dash_cooldown
 

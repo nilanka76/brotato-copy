@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://devt2xbk78rej" path="res://assets/sprites/shadow.png" id="1_i8q7a"]
 [ext_resource type="Script" uid="uid://bhe5as63410sv" path="res://scenes/Unit/unit.gd" id="1_ibc5n"]
 [ext_resource type="PackedScene" uid="uid://ddwa0r20ud4ay" path="res://scenes/Components/hurtbox_component.tscn" id="3_ibc5n"]
+[ext_resource type="PackedScene" uid="uid://clhub542loimh" path="res://scenes/Components/health_component.tscn" id="4_upu8o"]
 
 [sub_resource type="Animation" id="Animation_k1g5r"]
 resource_name = "RESET"
@@ -271,3 +272,8 @@ unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_ovkhs")
 
 [node name="HurtboxComponent" parent="." unique_id=664443890 instance=ExtResource("3_ibc5n")]
+
+[node name="HealthComponent" parent="." unique_id=129413757 instance=ExtResource("4_upu8o")]
+unique_name_in_owner = true
+
+[connection signal="on_damaged" from="HurtboxComponent" to="." method="_on_hurtbox_component_on_damaged"]
