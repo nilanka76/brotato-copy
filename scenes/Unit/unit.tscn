@@ -283,5 +283,9 @@ offset_top = -70.0
 offset_right = 46.0
 offset_bottom = -50.0
 
+[node name="FlashTimer" type="Timer" parent="." unique_id=917625441]
+wait_time = 0.2
+
 [connection signal="on_damaged" from="HurtboxComponent" to="." method="_on_hurtbox_component_on_damaged"]
 [connection signal="on_unit_health_change" from="HealthComponent" to="HealthBar" method="_on_health_component_on_unit_health_change"]
+[connection signal="timeout" from="FlashTimer" to="." method="_on_flash_timer_timeout"]

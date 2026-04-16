@@ -7,6 +7,7 @@ class_name Unit
 @onready var sprite: Sprite2D = %Sprite
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var health_component: HealthComponent = %HealthComponent
+@onready var flash_timer: Timer = $FlashTimer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,9 +19,18 @@ func _process(delta: float) -> void:
 	pass
 
 
+func set_flash_material() -> void:
+	sprite.material = Global.FLASH_MATERIAL
+	flash_timer.start()
+
+
 func _on_hurtbox_component_on_damaged(hitbox: HitboxComponent) -> void:
 	if health_component.curr_health <= 0:
 		return
-	
+	set_flash_material()
 	health_component.take_damage(hitbox.damage)
 	print("%s: %d" % [name,health_component.curr_health])
+
+
+func _on_flash_timer_timeout() -> void:
+	sprite.material = null
